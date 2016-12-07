@@ -1,5 +1,5 @@
 # svn
-Интернет магазин систем видеонаблюдения
+Интернет магазин систем видеонаблюдения (верстка)
 
 <a href="http://svn.div.agency/">Demo page 1</a><br>
 <a href="http://svn.div.agency/catalog.html">Demo page 2</a><br>
