@@ -1,0 +1,2232 @@
+@import 'nib'
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+// font-family: 'Poppins', sans-serif;
+/* font-family: "ProximaNovaRegular"; */
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaLight"; */
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot");
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+    url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "HelveticaThin";
+    src: url("../fonts/HelveticaThin/HelveticaThin.eot");
+    src: url("../fonts/HelveticaThin/HelveticaThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaThin/HelveticaThin.woff") format("woff"),
+    url("../fonts/HelveticaThin/HelveticaThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+*
+	box-sizing border-box
+.clearfix
+	clearfix()
+html,
+body
+	width 100%
+	height 100%         
+body
+	font-family: "ProximaNovaRegular";
+	position relative
+	max-width 1920px
+	min-width 320px
+	// padding 0 25px
+	margin 0 auto
+	clearfix()
+*
+	box-sizing border-box
+a
+	text-decoration none
+img
+	max-width 100%
+.wrap
+	max-width 1600px
+	margin 0 auto
+	padding 0 15px
+.container
+	width 100%
+	padding 0
+header
+	padding-top 15px
+	background #121617
+	color #fff
+	font-size 13px
+	box-shadow 0 1px 3px rgba(0,0,0,.14)
+	.navbar-brand
+		height auto
+		line-height 100%
+		padding 0
+.search-field
+	clearfix()
+	padding 0
+	float left
+	form
+		display table
+		width 100%
+		clearfix()
+		.row
+			margin 0
+		input,
+		select
+			height 36px
+			line-height 36px
+			outline none
+			display block
+			float left
+			color #6e747a
+		select
+			display block
+			float left
+			border 0
+			border-radius 0
+			cursor pointer		
+			padding 0 15px
+			outline none
+			-webkit-appearance none
+			background url("../images/ui/dd-arrow.png") no-repeat 90% center, #fff
+			border-left 1px solid #c4cacf
+		input[type="text"]
+			border none
+			border-radius 4px 0 0 4px
+			display block
+			float left
+			padding 0 10px
+		input[type="submit"]
+			border 0
+			outline none
+			-webkit-appearance none
+			background url("../images/ui/find.png") no-repeat center, #2a96d4
+			text-indent -999999px 
+			border-radius 0 4px 4px 0
+			display block
+			float left
+			transition 0.3s
+			&:hover
+				background url("../images/ui/find.png") no-repeat center, #1877ae
+.sys-links
+	float right
+	clearfix()
+	padding 0
+	&>div
+		position relative
+		float right
+		padding 0
+		clearfix()
+		&:not(:last-child)
+			margin-left 20px
+		a
+			font-size 13px
+			color #fff
+			padding 0 0 0 25px
+			transition 0.3s
+			line-height 36px
+		.notification
+			float right
+			font-size 11px
+			color #fff
+			padding 0.35px 5px
+			background #86b817
+			border-radius 1px
+			margin-left 10px
+			margin-top 10px
+			position relative
+			&:before
+				display block
+				content ''
+				position absolute
+				top 0
+				left -4px
+				width 6px
+				height 16px
+				background url("../images/ui/notification.png") no-repeat 0px 0px
+	.acc
+		a
+			padding-right 25px
+			&:after
+				display block
+				content ''
+				width 0
+				height 0
+				border-left 5px solid transparent
+				border-right 5px solid transparent
+				border-top 5px solid #86b817
+				position absolute
+				top 15px
+				right 5px
+				cursor pointer
+			&:before
+				display block
+				content ''
+				width 16px
+				height 15px
+				position absolute
+				top 8px
+				left 0
+				background url("../images/ui/header-icons.png") no-repeat 0px -61px
+	.cart
+		a
+			&:before
+				display block
+				content ''
+				width 16px
+				height 15px
+				position absolute
+				top 9px
+				left 0
+				background url("../images/ui/header-icons.png") no-repeat 0px -45px
+	.compare
+		a
+			&:before
+				display block
+				content ''
+				width 17px
+				height 15px
+				position absolute
+				top 9px
+				left 0
+				background url("../images/ui/header-icons.png") no-repeat 0px -29px
+.top-info
+	float left
+	padding 0
+	a
+		line-height 36px
+		font-size 13px
+		color #fff
+		position relative
+		display block
+		float left
+		&:first-child
+			margin 0 10px
+			&:before
+				display block
+				content ''
+				width 14px
+				height 14px
+				float left
+				margin 10px 10px 0 0
+				background url("../images/ui/header-icons.png") no-repeat 0px 0px
+		&:last-child
+			&:before
+				display block
+				content ''
+				width 18px
+				height 14px
+				float left
+				margin 10px 10px 0 0
+				background url("../images/ui/header-icons.png") no-repeat 0px -15px
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand
+	margin-left 0
+.container.top-line
+	padding 0
+	width 90%
+	float left
+#main-nav
+	padding 0
+	clearfix()
+	.row
+		margin 0
+.navbar-header
+	width 10%
+	float left
+.container-fluid
+	padding 0
+	margin 0
+.navbar
+	min-height auto
+	margin-bottom 0
+	border none
+#bottom-nav
+	padding 0
+	margin-top 12px
+	border-top 1px solid rgba(#fff, 0.1)
+	clearfix()
+	.dropdown
+		float left
+		width 20%
+	.category-menu
+		width 100%
+		height 45px
+		line-height 45px
+		background #86b817
+		text-transform uppercase
+		color #fff
+		font-size 13px
+		padding-left 10px
+		cursor pointer
+		transition 0.3s
+		border none
+		outline none
+		text-align left
+		&:hover
+			background #678b19
+		&+.dropdown-menu
+			width 100%
+			padding 0
+			background #fff
+			box-shadow 1px 2px 35px 3px rgba(0,0,0,.15)
+			&.opened
+				display block
+			li
+				height 45px
+				line-height 45px
+				border-left 6px solid #fff
+				transition 0.3s
+				background url("../images/ui/menu-item-arrow.png") no-repeat 92% center
+				&:hover
+					border-left 6px solid #7ad4ff
+					
+				a
+					font-size 14px
+					color #676767
+					display block
+					line-height 45px
+					padding 0
+					padding-left 10px
+					white-space nowrap
+					overflow hidden
+					text-overflow ellipsis
+					text-transform uppercase
+					padding-right 12%
+					font-family 'Arial', sans-serif
+					&:hover
+						background none
+				&:not(:last-child)
+					border-bottom 1px solid #e0e0e0
+	.main-menu
+		float left
+		margin-bottom 0
+		padding 0 0 0 5px
+		li
+			list-style-type none
+			display inline-block
+			a
+				height 45px
+				line-height 45px
+				color #fff
+				padding 0 10px
+				font-size 14px
+	a.help-link
+		display block
+		float right
+		font-size 10px
+		color #86b817
+		height 45px
+		line-height 45px
+.icon-bar i
+	color #fff
+	font-size 34px
+main
+	max-width 1600px
+	margin 15px auto 0
+	padding 0 15px
+	clearfix()
+	.wrap
+		width 79%
+		float right
+		padding 0		
+		clearfix()
+		&:first-child
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+		.main-banner
+			width 76.5%
+			float left
+			border 1px solid #a0a3a2
+			background url("../images/demo/main-banner.png") no-repeat 150% 0/65%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			clearfix()
+			.banner-img
+				float left
+				width 50%
+				height 100%
+			.banner-txt
+				width 73%
+				margin auto 4%
+				span
+					font-size 24.27px
+					color #000
+					font-family: "HelveticaLight";
+					
+				p
+					margin 10px 0
+					font-size 52.37px
+					font-family: "HelveticaThin";
+					color #000
+					line-height 46px
+				.more
+					display inline-block
+					a
+						font-size 12px
+						text-transform uppercase
+						color #fff
+						display block
+						padding 14px 66px
+						background #000
+						transition 0.3s
+						&:hover
+							text-decoration none
+							background rgba(0,0,0,0.8)
+					
+		.right-banner
+			width 22.4%
+			position relative
+			margin-left 12px
+			float right
+			img
+				width 100%
+			a
+				display block
+				font-size 11px
+				color #fff
+				text-transform uppercase
+				position absolute
+				bottom 9%
+				right 0
+				transform rotate(4.5deg)
+				width 100%
+				height 38px
+				text-align center
+				line-height 40px
+				
+		.gifts
+			margin-top 12px
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			clearfix()
+			.free-delivery
+				width 45%
+				float left
+				margin-right 1%
+				background url("../images/demo/red-banner.png") no-repeat center / cover
+			.gifts-items
+				width 54%
+				float left
+				clearfix()
+				a
+					display block
+				.gift
+					box-shadow 0 1px 4px rgba(1,2,2,.24)
+					float left
+					width 50%
+					padding 2.5%
+					.gift-products
+						display -webkit-flex
+						display -moz-flex
+						display -ms-flex
+						display -o-flex
+						display flex
+						clearfix()
+						margin 0 0 15px 0
+						.product-photo
+							box-shadow 0 1px 4px rgba(1,2,2,.24)
+							background #fff
+							display -webkit-flex
+							display -moz-flex
+							display -ms-flex
+							display -o-flex
+							display flex
+							img
+								margin auto
+						.gift-photo
+							border 1px solid #fb3f4c
+							padding 0
+							.gift-title
+								text-align center
+								color #fff
+								font-size 12px
+								background #fb3f4c
+								text-transform uppercase
+							img
+								display block
+								margin 5px auto
+							a
+								color #3e77aa
+								font-size 10px
+								text-align center
+								line-height 10px
+								padding 0 5px
+								display block
+					.product-name
+						margin-bottom 5px
+						a
+							font-size 14px
+							color #000
+.product-line-top
+	clearfix()
+	margin-bottom 15px
+	.poduct-price
+		float left
+		font-size 18px
+		font-family 'Arial', sans-serif;
+		color #fff
+		font-weight bold
+		background #2a96d4
+		padding 4px 17px
+		margin-right 10px
+	.poduct-response
+		display block
+		float left
+		a
+			font-size 12px
+			position relative
+			color #4a7eae
+			line-height 33px
+			padding-left 34px
+			&:before
+				display block
+				content url("../images/ui/response-cloud.png")
+				position absolute
+				top 7px
+				left 0
+.product-line-bottom
+	clearfix()
+	.buy
+		float left
+		margin-right 13px
+		a
+			font-weight bold
+			font-size 13px
+			text-transform uppercase
+			font-family 'Arial', sans-serif
+			padding 9px 22px
+			position relative
+			transition 0.3s
+			color #fff
+			display block
+			&.green
+				background #86b817
+				&:hover
+					background #76a117
+					text-decoration none
+				
+			&:before
+				display block
+				content ''
+				float left
+				margin-right 8px
+				width 19px
+				height 17px
+				background url("../images/ui/add-to-cart.png") no-repeat center
+.compare-btn
+	margin-top 3px
+	float left
+	img
+		transition 0.3s
+		opacity .8
+		&:hover
+			opacity 1
+.lists-nav
+	float right
+	padding-top 15px
+	clearfix()
+	div
+		width 9px
+		cursor pointer
+		height 13px
+		float left
+		&.left-arr
+			background url("../images/ui/slider-arrows.png") no-repeat 0px 0px
+			&:hover
+				background url("../images/ui/slider-arrows.png") no-repeat 0px -13px
+		&.right-arr
+			background url("../images/ui/slider-arrows.png") no-repeat -9px 0px
+			margin-left 15px
+			&:hover
+				background url("../images/ui/slider-arrows.png") no-repeat -9px -13px
+section.main
+	clearfix()
+	max-width 1600px
+	padding 0 15px
+	margin 0 auto
+	transition 0.3s		
+	aside
+		width 20%
+		float left
+		min-height 500px
+		.title-panel
+			clearfix()
+			border-bottom 1px solid #05b0ef
+		.dark-title
+			float left
+			font-family 'Arial', sans-serif;
+			font-size 20px
+			color #fff
+			text-transform uppercase
+			padding 7px 18px
+			background #000
+		.producer
+			margin-bottom 15px
+			ul
+				display block
+				box-shadow 1px 2px 35px 3px rgba(0,0,0,.15)
+				padding 0
+				margin 0
+				li
+					height 45px
+					line-height 45px
+					border-left 6px solid #fff
+					transition 0.3s
+					list-style-type none
+					white-space nowrap
+					overflow hidden
+					clearfix()
+					&:hover
+						border-left 6px solid #7ad4ff						
+					a
+						font-size 14px
+						color #676767
+						display block
+						float left
+						line-height 45px
+						padding 0
+						padding-left 10px
+						white-space nowrap
+						overflow hidden
+						text-overflow ellipsis
+						text-transform uppercase
+						max-width 100%
+						padding-right 5%
+						font-family 'Arial', sans-serif
+						&:hover
+							background none
+							text-decoration none
+					b
+						font-weight normal
+						color #05b0ef
+					&:not(:last-child)
+						border-bottom 1px solid #e0e0e0
+					&.active
+						a
+							color #05b0ef
+		.sidebar-banner
+			margin-bottom 20px
+			img
+				width 100%
+		.news,
+		.articles
+			.title-panel
+				margin-bottom 20px
+		.item:not(.slider-item):not(.news-line):not(.articles-line):not(.color-type):not(.country)
+			padding 0
+			border 1px solid #d7d7d7
+			margin 0
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			box-shadow 1px 3px 4px rgba(1,2,2,.24)
+			margin-bottom 20px
+			background url("../images/ui/news-icon.png") no-repeat 95% 92%
+			.photo
+				padding 0
+			.data
+				position relative
+				padding 15px 10px 10px
+				background url("../images/ui/news-dots.png") no-repeat center 55%
+				.title
+					text-align center
+					line-height 12px
+					overflow hidden
+					display -webkit-box
+					-webkit-line-clamp 3
+					-webkit-box-orient vertical
+					a
+						font-family "Arial", sans-serif
+						font-weight bold
+						font-size 10px
+						color #676767
+				.date
+					font-weight bold
+					font-size 10px
+					color #05b0ef
+					font-family 'Arial', sans-serif
+					position absolute
+					left 10px
+					bottom 10px
+	.filter
+		margin-bottom 15px
+		.filter-body
+			box-shadow 1px 2px 35px 3px rgba(0,0,0,.15)
+			padding 15px 0
+		&.category-filter
+			.filter-body
+				padding 15px 50px 15px 20px
+				ul
+					padding 0
+					margin 0
+					li
+						list-style-type none
+						font-family 'Poppins', sans-serif
+						clearfix()
+						&:not(:last-child)
+							margin-bottom 15px
+						a
+							display block
+							float left
+							font-weight 400
+							color #676767
+							font-size 13px
+							line-height 23px						
+							transition 0.3s
+							&:hover
+								text-decoration none
+								// color #2a96d4
+							&:before
+								display block
+								float left
+								content '>'
+								margin-right 10px
+						&.active,
+						&:hover
+							a
+								color #2a96d4
+							.count
+								background #2a96d4
+								
+						.count
+							float right
+							font-size 13px
+							color #fff
+							font-weight 600
+							width 23px
+							height 23px
+							background #b7b7b7
+							transition 0.3s
+							border-radius 50%
+							text-align center
+							line-height 28px
+		&.price-filter
+			.filter-body
+				padding 20px
+				.range-line
+					width 100%
+					margin-bottom 20px
+				.range-output
+					clearfix()
+					div:first-child
+						font-family 'Arial', sans-serif
+						font-size 14px
+						color #fff
+						text-transform uppercase
+						padding 6px 16px
+						background #000
+						float left
+						margin-right 25px
+					.output-inputs
+						clearfix()
+						input
+							display block
+							float left
+							width 50px
+							padding 0 2px
+							height 30px
+							&:first-child
+								margin-right 10px		
+		&.color-filter
+			.filter-body
+				ul
+					padding 0
+					margin 0
+					li
+						list-style-type none
+						padding 10px
+						input
+							display none
+							&[type="checkbox"]:checked
+								&+label
+									&:before
+										border 0
+										background url("../images/ui/checked-item.png") no-repeat center, #2a96d4
+										box-shadow none
+						label
+							color #4c4c4c
+							display block
+							line-height 24px
+							margin-bottom 0
+							font-size 14px
+							font-weight normal
+							font-family 'Arial', sans-serif
+							text-transform uppercase
+							cursor pointer
+							&:hover
+								color #05b0ef
+							b
+								font-weight normal
+								color #05b0ef
+								padding-left 10px
+							&:before
+								display block
+								float left
+								content ''
+								margin-right 20px
+								width 24px
+								height 24px
+								border 1px solid #bdbdbd
+								box-shadow inset 1px 3px 5px rgba(0,0,0,.28)
+	.title-panel
+		clearfix()
+		.big-title
+			font-size 20px
+			color #fff
+			text-transform uppercase
+			font-family 'Arial', sans-serif
+			padding 7px 18px
+			background #000
+.item.slider-item,
+.item.news-line,
+.item.articles-line
+	padding 0 1px !important
+.lists-nav#second-tab
+	display none
+section.main-list .tab-content .row,
+section.main-list .hot-offers .row,
+#catalog-type-rotator .row,
+#similar-carousel .row
+	padding 0 !important
+	margin 0 !important
+.item
+	padding 0 16px
+	margin-bottom 30px	
+	.item-wrap
+		border-radius 3px
+		box-shadow 0 1px 4px rgba(1,2,2,.24)
+		.item-photo
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			height 290px
+			border-bottom 2px solid #f4f5f7
+			position relative
+			overflow hidden
+			&>img
+				margin auto
+				max-width 90%
+			.sale-label
+				font-size 13px
+				color #fff
+				padding 2px 5px
+				background #fb3f4c
+				position absolute
+				top 0
+				right 0
+				z-index 1
+			.delivery-label
+				position absolute
+				bottom 0
+				right 0
+				max-width 40%
+			.new-label
+				text-transform uppercase
+				color #fff
+				font-weight bold
+				font-size 16px
+				font-family 'Arial', sans-serif
+				padding 5px 0px
+				background #f4c800
+				position absolute
+				top 10%
+				left 30%
+				z-index 1
+				width 100%
+				text-align center
+				transform rotate(45deg)
+			.hot-label
+				position absolute
+				bottom 3%
+				left 3%
+				z-index 1
+		.item-description
+			padding 15px 10px
+			.item-name
+				a
+					font-weight bold
+					font-family "Arial", sans-serif
+					font-size 16px
+					color #676767
+					transition 0.3s
+					&:hover
+						color #05b0ef
+						text-decoration none
+			.item-status
+				clearfix()
+				font-size 14px
+				margin 15px 0
+				div
+					float left
+					font-family: "HelveticaLight";
+					&:first-child
+						color #ff9600
+						&:after
+							display block
+							float right
+							content '|'
+							margin 0 5px
+							color #939393
+					&:last-child
+						color #939393
+			.buy-field
+				clearfix()
+				margin-bottom 15px
+				font-family 'Arial', sans-serif
+				.buy-btn
+					float left
+					margin-right 15px
+					
+					a
+						display block
+						font-weight bold									
+						font-size 13px
+						color #fff
+						transition 0.3s
+						padding 9px 37px
+						text-transform uppercase
+						background #86b817
+						&.blue
+							background #2a96d4
+							&:hover
+								background #2379aa
+						&:before
+							display block
+							float left
+							margin-right 10px
+							content url("../images/ui/add-to-cart.png")
+						&:hover
+							text-decoration none
+							background #76a117
+				.buy-price
+					font-weight bold
+					font-size 18px
+					color #05b0ef
+					line-height 38px
+			.call-me
+				a
+					display block
+					text-transform uppercase
+					font-size 13px
+					color #8b8b8b
+					font-family 'Arial', sans-serif
+					text-align center
+					padding 10px 0
+					border 1px solid #8b8b8b
+					transition 0.3s
+					&:hover
+						text-decoration none
+						color #fff
+						background #2a96d4
+	&.reverse
+		.item-wrap
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			min-height auto
+			box-shadow none
+			clearfix()
+			.item-photo
+				width 20%
+				float left
+				margin-right 2%
+				height auto
+				box-shadow 0 1px 4px rgba(1,2,2,.24)
+				.sale-label
+					left 0
+					right auto
+			.item-description
+				padding 20px
+				width 78%
+				float left
+				box-shadow 0 1px 4px rgba(1,2,2,.24)
+				.product-line-top
+					margin-top 10px
+					a
+						display block
+				.short-ds
+					padding-bottom 20px
+					border-bottom 1px solid #a0a0a0
+					overflow hidden
+					display -webkit-box
+					-webkit-line-clamp 2
+					-webkit-box-orient vertical
+					margin-bottom 25px
+					p
+						margin 5px 0
+						font-family 'Poppins', sans-serif
+						font-size 14px
+						color #676767
+						overflow hidden
+				.buy-field
+					clearfix()
+					.call-me
+						float right
+					.buy-btn
+						margin 0 0 0 10px
+					.call-me
+						width 30%
+						max-width 150px
+section.main-list
+	width 79%
+	float right
+	margin-top 35px
+	.panel-line
+		border-bottom 1px solid #05b0ef
+		clearfix()
+		ul.nav-tabs
+			float left
+			padding 0
+			margin 0
+			border-bottom 0			
+			&>li
+				margin-right 8px
+				&>a
+					font-size 16px
+					color #05b0ef
+					text-transform uppercase
+					font-family 'Arial', sans-serif
+					border-radius 0
+					border 1px solid #05b0ef
+					
+			li.active
+				background #82b316
+				border-radius none
+				a
+					color #fff
+					font-weight bold
+					background transparent
+					font-size 17.8px
+					border none
+					padding 9px 14px
+	.tab-content
+		margin 30px 0
+		.row
+			margin-left -15px
+			margin-right -15px
+	
+	.banners.row
+		margin-bottom 25px
+		a
+			display block
+			transition 0.3s
+			&:hover
+				transform scale(1.02)
+		.friday
+			padding-top 9px
+	.hot-offers
+		.row
+			margin-left -15px
+			margin-right -15px
+		.panel
+			margin-bottom 30px
+			border-bottom 1px solid #aaa
+			clearfix()
+			.title
+				float left
+				font-size 15px
+				font-weight bold
+				font-family 'Arial', sans-serif
+				padding 10px
+				color #fff
+				text-transform uppercase
+				margin-bottom -1px
+				background #ff9600
+.subscribe
+	border-top 1px solid #c6c6c6
+	.subscribe-wrap
+		clearfix()
+		font-family 'Arial', sans-serif
+		font-weight bold
+		margin 60px auto
+		max-width 580px
+		.subscribe-title
+			font-size 20px
+			margin-right 30px
+			color #000
+			text-transform uppercase
+			height 45px
+			width 165px
+			line-height 45px
+			text-align center
+			border 2px solid #000
+			float left
+		.subscribe-form
+			width 385px
+			float left
+			form
+				width 100%
+				input[type="text"]
+					height 45px
+					line-height 45px
+					border 1px solid #d7d7d7
+					width 68%
+					display block
+					float left
+					font-weight normal
+					background url("../images/ui/black-letter.png") no-repeat 5% center
+					padding 0 10px 0 50px
+					border-radius 0
+				input[type="submit"]
+					width 32%
+					display block
+					float left
+					height 45px
+					line-height 45px
+					color #fff
+					border none
+					font-size 14px
+					padding 0
+					text-align center
+					text-transform uppercase
+					padding-right 15px
+					appearance none
+					border-radius 0
+					transition 0.3s
+					background url("../images/ui/send-arrow.png") no-repeat 95% center,  #2a96d4
+					&:hover
+						background url("../images/ui/send-arrow.png") no-repeat 95% center,  #2379aa
+footer
+	padding 120px 0 30px 0
+	background #121617
+	.wrap
+		min-height 100px
+		.footer-column
+			font-family 'Arial', sans-serif
+			color #fff
+			padding 0
+			.column-title
+				text-transform uppercase
+				font-size 22px
+				color #a3a9ad
+				font-weight bold
+				margin-bottom 30px
+			.adress
+				margin-bottom 25px
+				font-weight bold
+				font-size 14px
+				p
+					margin 5px 0
+					font-weight normal
+					font-size 14px
+			.contacts
+				p
+					margin 5px 0
+			.copyr
+				margin-top 60px
+				color #a3a9ad
+			ul
+				padding 0
+				margin 0
+				li
+					list-style-type none
+					&:not(:last-child)
+						margin-bottom 10px
+					a
+						font-size 14px
+						color #fff
+			.payments
+				margin-top 20px
+			.social
+				clearfix()
+				margin-top 45px
+				div
+					&:first-child
+						float left
+						font-size 16px
+						color #a3a9ad
+						margin-right 15px
+						line-height 40px
+				.icons-wrap
+					clearfix()
+					a
+						display block
+						width 40px
+						height 40px
+						float left
+						transition 0.3s
+						&:hover
+							transform rotate(-10deg)
+						&:not(:last-child)
+							margin-right 10px
+						&:first-child
+							background url("../images/ui/social.png") no-repeat 0px 0px
+						&:nth-child(2)
+							background url("../images/ui/social.png") no-repeat 0px -41px
+						&:nth-child(3)
+							background url("../images/ui/social.png") no-repeat 0px -82px
+						&:nth-child(4)
+							background url("../images/ui/social.png") no-repeat 0px -123px
+section.breadcrums
+	margin-bottom 35px
+	height 60px
+	line-height 60px
+	.wrap
+		.links-container
+			padding-left 10px
+			box-shadow 0 1px 2px rgba(1,2,2,.24)
+			font-size 13px
+			font-family 'Arial', sans-serif
+			a
+				color #676767
+				display block
+				float left
+				&:hover
+					text-decoration none
+					color #2a96d4
+				&:after
+					margin 0 12px
+					content '>'
+					text-decoration none
+			span
+				color #2a96d4
+.stars
+	clearfix()
+	float left
+	margin-right 12px
+	.star
+		width 15px
+		height 15px
+		float left
+		background url("../images/ui/rate-stars.png") no-repeat 0px -16px
+		&:not(:last-child)
+			margin-right 2px
+		&.active
+			background url("../images/ui/rate-stars.png") no-repeat 0px 0px
+.bx-pager
+	margin 10px auto
+	text-align center
+.bx-pager-item
+	display inline-block
+	width 89px
+	height 104px
+	border solid 1px rgba(0,0,0,.3)
+	transition 0.3s
+	cursor pointer
+	padding 3px
+	&:not(:last-child)
+		margin-right 8px
+	&.active,
+	&:hover
+		border 1px solid #2a96d4
+	&>img
+		max-width 99%
+.pager-controls,
+.bx-wrapper .bx-controls-direction
+	div,
+	a
+		width 30px
+		height 30px
+		cursor pointer
+		border 1px solid #2a96d4
+		text-align center
+		line-height 30px
+		color #2a96d4
+		font-weight bold
+		transition 0.3s
+		position absolute
+		top 35%
+		text-indent 0
+		&:hover
+			background #2a96d4
+			color #fff
+			text-decoration none
+		&.left-arr
+			left 50%
+			content '<'
+		&.right-arr
+			right 50%
+			content '>'	
+section.card
+	margin-bottom 95px
+	.wrap
+		clearfix()
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		.card-photos
+			width 58%
+			float left
+			box-shadow 0 1px 2px rgba(1,2,2,.24)
+			min-height 100px
+			margin-right 1%
+			.card-big-photo
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				position relative
+				overflow hidden
+				margin-bottom 0
+				li
+					display block
+					margin auto
+					position relative
+					width 100% !important
+					height 100%
+					overflow hidden
+					border solid 1px rgba(0,0,0,.3)
+					list-style-type none
+				img
+					margin auto
+				.sale-label
+					color #fff
+					font-size 30px
+					background #fb3f4c
+					padding 8px 27px
+					position absolute
+					top 0
+					left 0
+					z-index 1
+				.new-label
+					text-transform uppercase
+					color #fff
+					font-weight bold
+					font-size 16px
+					font-family 'Arial', sans-serif
+					padding 5px 0px
+					background #f4c800
+					position absolute
+					top 10%
+					left 43%
+					z-index 1
+					width 100%
+					text-align center
+					transform rotate(45deg)
+				.delivery-label
+					position absolute
+					bottom 2px
+					left 0
+					z-index 1
+					max-width 15%
+				a.zoom-photo
+					width 38px
+					height 37px
+					position absolute
+					bottom 5%
+					right 5%
+					z-index 1
+					cursor pointer
+					background url("../images/ui/zoom-btn.png") no-repeat
+			.small-photos
+				margin 10px auto 35px auto
+				position relative
+				.pager-nav
+					text-align center
+					max-width 500px
+					white-space nowrap
+					margin 0 auto
+					overflow hidden
+					div,
+					.bx-pager-item
+						display inline-block
+						width 89px
+						height 104px
+						border solid 1px rgba(0,0,0,.3)
+						transition 0.3s
+						cursor pointer
+						&:not(:last-child)
+							margin-right 8px
+						&.active,
+						&:hover
+							border 1px solid #2a96d4
+						&>img
+							max-width 99%
+		.card-data
+			width 41%
+			float left
+			padding 30px 1.8%
+			min-height 100px
+			box-shadow 0 1px 2px rgba(1,2,2,.24)
+			.product-name
+				font-family: 'Poppins', sans-serif;
+				font-weight 600
+				font-size 22px
+				color #676767
+				margin-bottom 14px
+			.product-rate
+				clearfix()
+				font-family: 'Poppins', sans-serif;
+				color #676767
+				margin-bottom 15px
+				.response-count					
+					float left					
+					font-weight 400
+					&:after
+						display block
+						content '|'
+						float right
+						margin 0 12px
+				.add-response
+					float left
+					a
+						color #676767
+			.price-field
+				padding 22px 0
+				border-top 1px solid #ccc			
+				border-bottom 1px solid #ccc
+				font-family 'Arial', sans-serif
+				clearfix()
+				.price
+					font-weight bold
+					font-size 22px
+					color #fff					
+					padding 2px 10px
+					float left
+					margin-right 12px
+					background #86b817
+				.old-price
+					font-size 23px
+					color #939393
+					line-height 34px
+					text-decoration line-through
+			.short-info
+				padding 22px 0				
+				font-size 15px
+				color #454545
+				font-family 'Arial', sans-serif
+				border-bottom 1px solid #ccc				
+				div
+					margin-bottom 10px
+					font-weight bold
+				p
+					font-weight normal
+					margin 0
+			.count
+				padding 60px 0
+				font-family 'Poppins', sans-serif
+				border-bottom 1px solid #ccc
+				.category
+					clearfix()
+					margin-bottom 10px
+					div						
+						font-size 14px
+						float left
+						&:first-child							
+							margin-right 5px
+							font-weight 600
+						&:last-child
+							font-weight 400
+				.counter
+					clearfix()
+					&>div
+						&:first-child
+							font-size 14px
+							float left
+							font-weight 600
+							line-height 37px
+							margin-right 5px
+					.counter-wrap
+						float left
+						display table
+						clearfix()
+						.less,
+						.more
+							float left
+							width 90px
+							cursor pointer
+							transition 0.3s
+							text-align center
+							height 37px
+							display table
+							line-height 37px
+							color #fff
+							font-weight 600
+						.less
+							background #121617
+							&:hover
+								opacity .9
+						.more
+							background #2a96d4
+							&:hover
+								background #2379aa
+						input
+							width 100%
+							float left
+							display block
+							width 90px
+							color #5b5b5b
+							outline none
+							border 1px solid #d7d7d7
+							height 37px
+							line-height 37px
+							text-align center
+							font-weight 600
+			.to-cart
+				padding 20px 0
+				border-bottom 1px solid #ccc
+			.share
+				padding-top 20px
+				clearfix()
+				div
+					&:first-child
+						font-size 14px
+						font-weight 600
+						color #767676
+						font-family 'Poppins', sans-serif
+						line-height 40px
+						margin-right 5px
+						float left
+				.share-wrap
+					float left
+					clearfix()
+					a
+						display block
+						float left
+						width 40px
+						height 40px
+						transition 0.3s
+						&:not(:last-child)
+							margin-right 7px
+						&:nth-child(1)
+							background url("../images/ui/share-btns.png") no-repeat 0px 0px
+						&:nth-child(2)
+							background url("../images/ui/share-btns.png") no-repeat 0px -40px
+						&:nth-child(3)
+							background url("../images/ui/share-btns.png") no-repeat 0px -80px
+						&:nth-child(4)
+							background url("../images/ui/share-btns.png") no-repeat 0px -120px
+						&:nth-child(5)
+							background url("../images/ui/share-btns.png") no-repeat 0px -160px
+						&:hover
+							transform translateY(-5%)
+section.card-tabs
+	.tab-content
+		&>div
+			margin-bottom 75px
+	.wrap
+		padding 0 50px
+		font-family 'Arial', sans-serif
+		ul
+			padding 0
+			margin 0 0 30px 0
+			display inline-block
+			border-top 1px solid #c2c2c2
+			li
+				border-right 1px solid #c2c2c2
+				a
+					font-weight bold
+					font-family 'Arial', sans-serif
+					color #2a2a2a
+					text-transform uppercase
+					border-radius 0
+					border-top 0
+					margin 0
+				&.active
+					a
+						border 0
+						color #2a96d4
+						border-bottom 1px solid transparent
+				&:first-child
+					border-left 1px solid #c2c2c2
+		.responses
+			.response
+				font-size 14px
+				color #676767				
+				margin-bottom 20px
+		.new-response
+			font-size 15px
+			color #454545
+			font-weight bold
+			color #454545			
+			.your-rate
+				color #676767
+				font-weight normal
+				&>div:first-child
+					margin 20px 0
+				.rate-this
+					clearfix()
+					margin-bottom 20px
+					div
+						float left
+						line-height 16px
+					.stars
+						margin 0 15px
+			.response-container
+				.title
+					font-size 14px
+					font-weight normal
+				form
+					.form-field
+						clearfix()
+						width 100%
+						&:first-child
+							margin-bottom 15px
+						textarea
+							width 100%
+							height 100px
+							border 1px solid #c2c2c2
+							resize none
+							padding 10px
+							font-weight normal
+					.row
+						margin 0
+						&>div
+							padding 0
+							&:not(:last-child)
+								padding 0 20px 0 0
+					input
+						display block
+						width 100%
+						border 1px solid #c2c2c2
+						padding-left 10px
+						height 50px
+						font-weight normal
+						&[type="submit"]
+							color #fff
+							text-transform uppercase
+							font-size 14px
+							font-weight bold
+							background #2a96d4
+							transition 0.3s
+							border 0
+							outline none
+							&:hover
+								background #2379aa
+section.similar-items
+	margin-bottom 85px
+	.panel
+		clearfix()
+		margin-bottom 30px
+		border-bottom 1px solid #05b0ef
+		padding-bottom 10px
+		.title
+			font-weight bold
+			font-size 16px
+			float left
+			max-width 80%
+			text-transform uppercase
+			font-family 'Arial', sans-serif
+			color #2a2a2a
+
+section.main .filter.color-filter .filter-body
+	padding 0 !important
+section.main .filter.color-filter .filter-body .item.color-type,
+section.main .filter.color-filter .filter-body .item.country
+	padding 15px
+.catalog-container
+	width 79%
+	float right
+	min-height 500px
+	transition 0.3s
+	&.blured
+		opacity .5
+	.catalog-panel
+		clearfix()
+		margin-bottom 15px
+		font-family 'Arial', sans-serif
+		.catalog-name
+			font-weight bold
+			font-size 22px
+			color #454545			
+			text-transform uppercase
+			line-height 34px
+			float left
+		.catalog-sort
+			float right
+			.view-type
+				float left
+				margin-left 42px
+				width 67px
+				height 34px
+				border-radius 3px
+				border 1px solid #bbbbbb
+				padding-top 8px
+				clearfix()
+				a
+					display block
+					float left
+					transition 0.3s
+					&:first-child
+						width 17px
+						height 15px
+						background url("../images/ui/view-type1.png") no-repeat 0px 0px
+						margin 0 10px
+						&.active
+							background url("../images/ui/view-type1.png") no-repeat 0px -15px
+					&:last-child
+						width 19px
+						height 15px
+						background url("../images/ui/view-type2.png") no-repeat 0px 0px
+						&.active
+							background url("../images/ui/view-type2.png") no-repeat 0px -15px
+			.by
+				float left
+				margin-right 12px
+				div:first-child
+					line-height 34px
+					margin-right 12px
+					font-size 14px
+					float left
+					color #676767
+				select
+					display block
+					float left
+					height 34px				
+					border-radius 3px
+					cursor pointer
+					padding 0 10px
+					outline none
+					border 1px solid #bbbbbb
+					appearance none
+					background url("../images/ui/dd-arrow.png") no-repeat 90% center
+				&.show
+					select
+						width 66px
+				&.sort
+					select
+						width 200px
+.catalog-wrap
+	padding-bottom 80px
+	.catalog-tabs-panel
+		clearfix()
+		padding-bottom 20px
+		border-bottom 1px solid #2a96d4
+		ul
+			padding 0
+			float left
+			margin 0
+			border 0
+			li
+				a
+					font-size 14px
+					color #676767
+					font-family 'Arial', sans-serif
+					font-weight 400
+					text-transform uppercase
+					padding 4px 15px
+					border-radius 20px
+					border 1px solid #2a96d4
+					&:hover
+						color #fff
+						background #2a96d4
+						border 1px solid #2a96d4
+				&.active
+					a
+						color #fff
+						background #2a96d4
+						border 1px solid #2a96d4
+				&:first-child
+					margin-right 6px
+	.catalog-desk
+		padding-top 30px
+		.pagination-panel
+			padding-right 10px
+			clearfix()
+			margin-top 30px
+			.nav-links
+				float right
+				a
+					display block
+					float left
+					width 35px
+					height 35px
+					cursor pointer
+					transition 0.3s
+					background #fff
+					margin-left 3px
+					text-align center
+					line-height 35px
+					color #676767
+					font-size 14px
+					font-weight 600
+					font-family 'Poppins', sans-serif
+					box-shadow 0 1px 4px rgba(1,2,2,.24)
+					&:not(:first-child):not(:last-child):hover
+						background #2a96d4
+						color #fff
+						text-decoration none
+					&.left
+						margin-right 8px
+						background url("../images/ui/pagination-arrow.png") no-repeat center, #fff
+					&.right
+						margin-left 8px
+						background url("../images/ui/pagination-arrow.png") no-repeat center, #fff
+						transform rotate(180deg)
+						box-shadow 0 -1px 4px rgba(1,2,2,.24)
+.filters-toggle
+	display none
+	position fixed
+	z-index 3
+	left -32px
+	top 45%
+	padding 5px 10px
+	background #000
+	transform rotate(90deg)
+	color #fff
+	font-family "Poppins", sans-serif
+	text-transform uppercase
+	color #fff
+	font-size 16px
+	border-radius 5px 5px 0	0
+	&.active
+		left auto
+		right -32px
+		border-radius 0 0 5px 5px					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1679px) {
+	footer .wrap .footer-column .social div:first-child {
+		float none
+	}
+}
+@media screen and (max-width: 1345px) {
+	.search-field {
+		width 100%
+	}
+	.top-info,
+	.sys-links {
+		width 50%
+	}
+	.search-field form input[type='text'] {
+		width 70%
+	}
+	.search-field form select {
+		width 20%
+	}
+	.search-field form input[type='submit'] {
+		width 10%
+	}
+	.item .item-wrap .item-photo {
+		height 220px
+	}
+	.item {
+		padding 0 10px
+	}
+	section.main-list,
+	.catalog-container {
+		width 78%
+	}
+	section.main aside .dark-title {
+		width 80%
+		padding 7px 10px
+		font-size 16px
+		text-align center
+	}
+	section.main aside .item:not(.articles-line):not(.news-line):not(.slider-item):not(.color-type):not(.country) {
+		background url(../images/ui/news-icon.png) no-repeat 95% 92% / 10%
+	}
+	section.main aside .item .data .title {
+		line-height 10px
+	}
+	footer .wrap .footer-column .column-title {
+		font-size 18px
+	}
+	.item .item-wrap .item-description .buy-field .buy-btn a {
+		padding 9px 5px
+	}
+	.item .item-wrap .item-description .buy-field .buy-btn {
+		margin-right 5px
+	}
+	section.main aside .producer ul li {
+		height 40px
+		line-height 40px
+	}
+	section.main aside .producer ul li a {
+		font-size 12px
+		line-height 40px
+	}
+	main .wrap .main-banner .banner-txt p {
+		font-size 30px
+		line-height 28px
+	}
+	main .wrap .right-banner a {
+		bottom 7%
+	}
+	section.card-tabs .wrap .new-response .response-container form input[type='submit'] {
+		font-size 10px
+	}
+	section.similar-items .row .item {
+		padding 0 5px
+	}
+	section.main .filter.category-filter .filter-body,
+	section.main .filter.price-filter .filter-body {
+		padding 15px
+	}
+	section.main .filter.price-filter .filter-body .range-output div:first-child {
+		font-size 12px
+		padding 7px 8px
+		margin-right 10px
+	}
+	.item.reverse .item-wrap .item-description {
+		width 73%
+	}
+	.item.reverse .item-wrap .item-photo {
+		width 25%
+	}
+	section.main aside .item:not(.slider-item):not(.news-line):not(.articles-line) {
+		background-size 10%
+	}
+	section.main .filter.price-filter .filter-body .range-output div:first-child {
+		width 100%
+		margin-bottom 10px
+		text-align center
+	}
+	section.main .filter.price-filter .filter-body .range-output .output-inputs {
+		width 100%
+	}
+	section.main .filter.price-filter .filter-body .range-output .output-inputs input:first-child {
+		margin-right 2%
+	}
+	section.main .filter.price-filter .filter-body .range-output .output-inputs input {
+		width 49%
+	}
+	
+
+}
+@media screen and (max-width: 1023px) {
+	.container-fluid>.navbar-collapse,
+	.container-fluid>.navbar-header,
+	.container>.navbar-collapse,
+	.container>.navbar-header {
+		width 100%
+		clearfix()
+		margin 0 0 10px 0
+	}
+	.container.top-line {
+		width 100%
+	}
+	#bottom-nav .dropdown {
+		float none
+		width 100%
+	}
+	#bottom-nav .category-menu,
+	#bottom-nav .main-menu {
+		width 100%
+		text-align center
+	}
+	#bottom-nav .category-menu + .dropdown-menu {
+		width 100%
+	}
+	main .wrap {
+		width 100%
+	}
+	section.main aside .producer,
+	section.main aside .sidebar-banner {
+		display none
+	}
+	.articles-line,
+	.news-line {
+		width 100% !important
+	}
+	.articles-line .item,
+	.news-line .item {
+		width 33% !important
+		float left !important
+	}
+	section.main aside .item {
+		float left
+		width 33%
+	}
+	section.main aside .item:not(:last-child) {
+		margin-right 0.5%
+	}
+	section.main aside,
+	section.main-list {
+		width 100%
+		min-height auto
+	}
+	footer .wrap .footer-column {
+		padding 0 10px
+	}
+	footer .wrap .footer-column .social .icons-wrap a:not(:last-child) {
+		margin-right 1px
+	}
+	section.card-tabs .wrap .new-response .response-container form .row > div:not(:last-child) {
+		padding 0
+		margin-bottom 20px
+	}
+	.catalog-container {
+		width 100%
+	}
+}
+@media screen and (max-width: 810px) {
+	.top-info, .sys-links {
+		width 100%
+		text-align center
+	}
+	.top-info> a,
+	.sys-links> div {
+		display inline-block
+		float none
+	}
+	.sys-links> div,
+	.sys-links > div:not(:last-child) {
+		margin-left 0
+	}
+	section.card .wrap {
+		flex-wrap wrap
+	}
+	section.card .wrap .card-photos,
+	section.card .wrap .card-data {
+		width 100%
+	}
+	section.main {
+		position relative
+	}
+	.filters-toggle {
+		display block
+	}
+	section.main aside.filters {
+		position absolute
+		top 44px
+		z-index 2
+		background #fff
+		transition 0.3s
+		width 90%
+		left 0
+		transform translateX(-110%)
+	}
+	section.main aside.filters.active {
+		transform translateX(0)
+	}
+	.item.reverse .item-wrap .item-description {
+		width 58%
+	}
+	.item.reverse .item-wrap .item-photo {
+		width 40%
+	}
+}
+
+@media screen and (max-width: 767px) {
+	main .wrap .main-banner {
+		width 100%
+	}
+	main .wrap .right-banner,
+	main .wrap .gifts .free-delivery {
+		display none
+	}
+	main .wrap .main-banner .banner-txt {
+		padding 5% 0
+	}
+	main .wrap .gifts .gifts-items,
+	section.main aside .item {
+		width 100%
+	}
+	.subscribe .subscribe-wrap {
+		width 280px
+	}
+	.subscribe .subscribe-wrap .subscribe-title {
+		width 100%
+		margin-bottom 20px
+	}
+	.subscribe .subscribe-wrap .subscribe-form form input[type='submit'] {
+		font-size 10px
+	}
+	.subscribe .subscribe-wrap .subscribe-form {
+		width 100%
+	}
+	footer .wrap .footer-column {
+		margin-bottom 20px
+	}
+	footer .wrap .footer-column .social .icons-wrap a:not(:last-child) {
+		margin-right 10px
+	}
+	.item .item-wrap .item-photo .delivery-label {
+		max-width 25%
+	}
+	.item .item-wrap .item-photo .new-label {
+		left 37%
+	}
+	section.breadcrums {
+		display none
+	}
+	section.card {
+		margin-top 20px
+		margin-bottom 30px
+	}
+	section.card-tabs .wrap ul li a {
+		font-size 10px
+		padding 5px 0
+	}
+	section.card-tabs .wrap ul {
+		width 100%
+	}
+	section.card-tabs .wrap ul li {
+		width 25%
+		text-align center
+	}
+	section.card .wrap .card-photos .small-photos {
+		display none
+	}
+	section.card .wrap .card-photos .card-big-photo .new-label {
+		top 5%
+		left 37%
+	}
+	section.card-tabs .wrap {
+		padding 0 10px
+	}
+	section.card-tabs .wrap ul li a {
+		font-size 8px
+	}
+	.catalog-container .catalog-panel .catalog-name {
+		width 100%
+		margin-top 10px
+	}
+	.catalog-container .catalog-panel .catalog-sort {
+		margin 10px 0
+		width 100%
+	}
+	.catalog-container .catalog-panel .catalog-sort .by div:first-child {
+		display none
+	}
+	.catalog-container .catalog-panel .catalog-sort .view-type {
+		margin-left 0
+	}
+	.catalog-container .catalog-panel .catalog-sort .by {
+		margin-right 5px
+	}
+	.catalog-container .catalog-panel .catalog-sort .by.sort select {
+		width 145px
+	}
+	.catalog-wrap .catalog-tabs-panel ul li a {
+		font-size 10px
+	}
+	.item.reverse .item-wrap {
+		flex-wrap wrap
+	}
+	.item.reverse .item-wrap .item-description {
+		width 100%
+	}
+	.item.reverse .item-wrap .item-photo {
+		width 100%
+		margin-bottom 10px
+	}
+	.catalog-wrap .catalog-desk .pagination-panel {
+		margin-top 0
+	}
+	.catalog-wrap {
+		padding-bottom 30px
+	}
+	footer {
+		padding 30px 0
+	}
+	.subscribe .subscribe-wrap {
+		margin 20px auto
+	}
+	section.similar-items,
+	section.card-tabs .tab-content > div {
+		margin-bottom 15px
+	}
+	.articles-line .item,
+	.news-line .item {
+		width 100% !important
+	}
+	.bx-wrapper .bx-prev {
+		left -10px
+	}
+	.bx-wrapper .bx-next {
+		right -10px
+	}
+	.navbar-toggle {
+		display block
+		padding 0
+		border 0
+		outline 0
+		margin 0
+		color #fff
+		margin-right 10px
+		-webkit-appearance button
+	}
+	.navbar-toggle .icon-bar {
+		width 30px
+		height 34px
+	}
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+	#bottom-nav a.help-link {
+		height auto;
+		line-height 100%
+	}
+	.search-field form input[type='text'] {
+		width 50%
+	}
+	.search-field form select {
+		width 40%
+	}
+	.wrap {
+		padding 0 10px
+	}
+	main .wrap .gifts .gifts-items .gift {
+		width 100%
+	}
+	section.card-tabs .wrap ul li a {
+		font-size 6px
+	}
+	.item.reverse .item-wrap .item-description .buy-field .call-me {
+		max-width 115px
+		width auto
+	}
+	.item.reverse .item-wrap .item-description .buy-field .call-me a {
+		font-size 10px
+		padding 10px 5px
+	}
+	section.main-list .panel-line ul.nav-tabs > li > a,
+	section.main-list .panel-line ul.nav-tabs li.active a {
+		padding 12px
+		font-size 14px
+	}
+}

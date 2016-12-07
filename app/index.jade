@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+html(lang="ru-en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		link(rel="stylesheet", href="css/owl.carousel.css")
+		link(rel="stylesheet", href="css/style.css")
+		title SVN Главная
+	body
+		header
+			.wrap
+				nav.navbar
+					.container-fluid
+						.navbar-header
+							a.navbar-brand(href="/")
+								img(src="images/ui/logo.png", alt="SVN")
+							button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bottom-nav" )
+								span.sr-only Навигация
+								span.icon-bar
+									i.fa.fa-bars.fa-2x
+						#main-nav
+							.container.top-line
+								.row
+									.search-field.col-md-5.col-xs-12
+										form(action="#")
+											.row
+												input(type="text" placeholder="Поиск..." class="col-sm-7")
+												select#search-filter(name="search-filter" class="col-sm-4")
+													option(value="1") Все категории
+													option(value="2") Все категории
+													option(value="3") Все категории
+												input(type="submit" class="col-sm-1")
+									.top-info.col-md-3.col-xs-6
+										a(href="tel:380937897898") +38(093)789-78-98
+										a(href="mailto:danya.89@mail.ru") danya.89@mail.ru
+									.sys-links.col-md-4.col-xs-6
+										.link-item.acc
+											a(href="#") Мой аккаунт
+										.link-item.cart
+											a(href="#") Корзина
+											.notification 4
+										.link-item.compare
+											a(href="#") Сравнение
+											.notification 27
+						div.collapse.navbar-collapse#bottom-nav
+							.dropdown
+								button(type="button" class="category-menu dropdown-toggle" id="category-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") Меню
+								ul.dropdown-menu.opened(aria-labelledby="category-list")
+									li
+										a(href="#") Категория 1
+									li
+										a(href="#") Категория 2
+									li
+										a(href="#") Категория 3
+									li
+										a(href="#") Категория 4
+									li
+										a(href="#") Категория 5
+									li
+										a(href="#") Категория 6
+									li
+										a(href="#") Категория 7
+									li
+										a(href="#") Категория 8
+									li
+										a(href="#") Категория 9
+									li
+										a(href="#") Категория 10
+									li
+										a(href="#") Категория 11
+									li
+										a(href="#") Категория 12
+									li
+										a(href="#") Категория 13
+									li
+										a(href="#") Категория 14
+									li
+										a(href="#") Категория 15
+									li
+										a(href="#") Категория 16
+									li
+										a(href="#") Категория 17
+									li
+										a(href="#") Категория 18
+							ul.main-menu
+								li
+									a(href="#") Главная
+								li
+									a(href="#") Товары
+								li
+									a(href="#") Услуги
+								li
+									a(href="#") О нас
+								li
+									a(href="#") Клиентам
+								li
+									a(href="#") Контакты
+								li
+									a(href="#") Скоро в продаже
+							a(href="#" class="help-link") Помощь
+		main
+			.wrap
+				.main-banner
+					.banner-txt
+						span Мощная защита
+						p Профессиональная & мощная защита
+						.more
+							a(href="#") Подробнее
+					.banner-img
+				.right-banner
+					img(src="images/demo/right-top-banner.png", alt="Как выбрать камеру")
+					a(href="#") Подробнее
+			.wrap
+				.gifts
+					.free-delivery
+					.gifts-items
+						.gift
+							.gift-products.row
+								.product-photo.col-sm-7
+									img(src="images/demo/gift-cam.png", alt="")
+								.gift-photo.col-sm-5
+									.gift-title +Подарок
+									img(src="images/demo/gift-mouse.png", alt="")
+									a(href="#") Rapoo M10 Wireless  Optical Mouse Black
+							.product-name
+								a(href="#").
+									Turbo HD  300-15IBR (80M300LXUA) Black + беспроводная мышка в подарок!
+							.product-line-top
+								.poduct-price 350грн
+								.poduct-response
+									a(href="#") 5 отзывов
+							.product-line-bottom
+								.buy
+									a.green(href="#") Купить
+								.compare-btn
+									a(href="#")
+										img(src="images/ui/compare-icon.png", alt="")
+						.gift
+							.gift-products.row
+								.product-photo.col-sm-7
+									img(src="images/demo/gift-cam.png", alt="")
+								.gift-photo.col-sm-5
+									.gift-title +Подарок
+									img(src="images/demo/gift-mouse.png", alt="")
+									a(href="#") Rapoo M10 Wireless  Optical Mouse Black
+							.product-name
+								a(href="#").
+									Turbo HD  300-15IBR (80M300LXUA) Black + беспроводная мышка в подарок!
+							.product-line-top
+								.poduct-price 350грн
+								.poduct-response
+									a(href="#") 5 отзывов
+							.product-line-bottom
+								.buy
+									a.green(href="#") Купить
+								.compare-btn
+									a(href="#")
+										img(src="images/ui/compare-icon.png", alt="")
+		section.main
+			section.main-list
+				.panel-line
+					ul.nav.nav-tabs#main-tabs(role="tablist")
+						li(role="presentation" class="active")
+							a(href="#top-items" aria-controls="top-items" role="tab" data-toggle="tab") Top товары
+						li(role="presentation")
+							a(href="#new-items" aria-controls="new-items" role="tab" data-toggle="tab") Новинки
+					.lists-nav#first-tab
+						a(href="#top-items-rotator" role="button" data-slide="prev")
+							.left-arr
+						a(href="#top-items-rotator" role="button" data-slide="next")
+							.right-arr
+					.lists-nav#second-tab
+						a(href="#new-items-rotator" role="button" data-slide="prev")
+							.left-arr
+						a(href="#new-items-rotator" role="button" data-slide="next")
+							.right-arr
+				.tab-content
+					.item-list.tab-pane#top-items.fade.in.active(role="tabpanel")
+						.top-slider-items.carousel.slide#top-items-rotator(data-ride="carousel")
+							.carousel-inner(role="listbox")
+								.row.item.active
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+								.row.item
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+					.item-list.tab-pane#new-items.fade(role="tabpanel")
+						.new-slider-items.carousel.slide#new-items-rotator(data-ride="carousel")
+							.carousel-inner(role="listbox")
+								.row.item.active
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+								.row.item
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.new-label Новинки
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a.blue(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+									.item.col-md-3.col-sm-4
+										.item-wrap
+											.item-photo
+												img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+												.sale-label -70%
+												.delivery-label
+													img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+											.item-description
+												.item-name
+													a(href="#").
+														Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+												.item-status
+													div В наличии
+													div Оптом и в розницу
+												.buy-field
+													.buy-btn
+														a(href="#") Купить
+													.buy-price 350грн
+												.call-me
+													a(href="#") Перезвоните мне
+
+				.banners.row
+					.lorex.col-sm-6
+						a(href="#")
+							img(src="images/demo/lorex-banner.png", alt="")
+					.friday.col-sm-6
+						a(href="#")
+							img(src="images/demo/black-friday-banner.png", alt="")
+				.hot-offers.carousel.slide#hot-items-rotator(data-ride="carousel")
+					.panel
+						.title Горячое предложение
+						.lists-nav
+							a(href="#hot-items-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#hot-items-rotator" role="button" data-slide="next")
+								.right-arr
+					.hot-wrapper.carousel-inner(role="listbox")
+						.row.item.active
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a.blue(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+						.row.item
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a.blue(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+							.item.col-md-3.col-sm-4
+								.item-wrap
+									.item-photo
+										img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+										.sale-label -70%
+										.delivery-label
+											img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.hot-label
+											img(src="images/ui/hot.png", alt="")
+									.item-description
+										.item-name
+											a(href="#").
+												Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+										.item-status
+											div В наличии
+											div Оптом и в розницу
+										.buy-field
+											.buy-btn
+												a(href="#") Купить
+											.buy-price 350грн
+										.call-me
+											a(href="#") Перезвоните мне
+			aside
+				.producer.carousel.slide#producer-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title Производитель
+						.lists-nav
+							a(href="#producer-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#producer-rotator" role="button" data-slide="next")
+								.right-arr
+					.producer-lists.carousel-inner(role="listbox")
+						div.active.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+						div.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+						div.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+				.sidebar-banner
+					img(src="images/demo/sidebar-ad.png", alt="")
+				.news.carousel.slide#news-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title Новости
+						.lists-nav
+							a(href="#news-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#news-rotator" role="button" data-slide="next")
+								.right-arr
+					.news-container.carousel-inner(role="listbox")
+						.news-line.item.active
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo1.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo2.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo3.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+						.news-line.item
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo1.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo2.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo3.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016 
+						.news-line.item
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo1.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo2.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6.col-xs-4
+									img(src="images/demo/news-photo3.png", alt="")
+								.data.col-sm-6.col-xs-8
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016 
+				.articles.carousel.slide#articles-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title Статьи
+						.lists-nav
+							a(href="#articles-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#articles-rotator" role="button" data-slide="next")
+								.right-arr
+					.articles-container.carousel-inner(role="listbox")
+						.articles-line.item.active
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo1.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo2.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo3.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+						.articles-line.item
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo1.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo2.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+							.item.row
+								.photo.col-sm-6
+									img(src="images/demo/article-photo3.png", alt="")
+								.data.col-sm-6
+									.title
+										a(href="#").
+											Интеллектуальные сетевые тепловизоры от Dahua Technology
+									.date 10.09.2016
+		.subscribe
+			.subscribe-wrap
+				.subscribe-title Рассылка
+				.subscribe-form
+					form(action="#")
+						input(type="text" placeholder="Введите адрес" required)
+						input(type="submit" value="Отправить")
+
+		footer
+			.wrap.row
+				.footer-column.col-sm-3
+					.column-title Свяжитесь с нами
+					.adress Офис:
+						p.
+							795 Folsom Ave, Suite 600<br> San Francisco, CA 94107
+					.contacts
+						p
+							b Телефон:
+							span (91) 8547 632521
+						p
+							b Fax:
+							span (91) 11 4752 1433
+						p
+							b Email:
+							span info@pan
+					.copyr ©Copyright 2016 SVN | All Rights Reserved
+				.footer-column.col-sm-3
+					.column-title Мой аккаунт
+					ul
+						li
+							a(href="#") Авторизоваться
+						li
+							a(href="#") Моя тележка
+						li
+							a(href="#") Добавить в корзину
+						li
+							a(href="#") Проверять, выписываться
+				.footer-column.col-sm-3
+					.column-title Информация
+					ul
+						li
+							a(href="#") Специальные предложения
+						li
+							a(href="#") Новые продукты
+						li
+							a(href="#") Бестселлеры
+						li
+							a(href="#") Наши магазины
+				.footer-column.col-sm-3
+					.column-title Заказы
+					ul
+						li
+							a(href="#") Варианты оплаты
+						li
+							a(href="#") Доставка и доставки
+						li
+							a(href="#") Возвращает
+						li
+							a(href="#") Перевозка
+					.payments
+						img(src="images/ui/payments.png", alt="")
+					.social
+						div Оставайся на связи
+						.icons-wrap
+							a(href="#")
+							a(href="#")
+							a(href="#")
+							a(href="#")
+
+		script(src="js/jquery-1.9.1.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+		script(src="js/main.js")

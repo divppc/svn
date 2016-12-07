@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+html(lang="ru-en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/font-awesome.min.css")
+		link(rel="stylesheet", href="css/nouislider.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		link(rel="stylesheet", href="css/style.css")
+		title SVN Каталог1
+	body
+		header
+			.wrap
+				nav.navbar
+					.container-fluid
+						.navbar-header
+							a.navbar-brand(href="/")
+								img(src="images/ui/logo.png", alt="SVN")
+							button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bottom-nav" )
+								span.sr-only Навигация
+								span.icon-bar
+									i.fa.fa-bars.fa-2x
+						#main-nav
+							.container.top-line
+								.row
+									.search-field.col-md-5.col-xs-12
+										form(action="#")
+											.row
+												input(type="text" placeholder="Поиск..." class="col-sm-7")
+												select#search-filter(name="search-filter" class="col-sm-4")
+													option(value="1") Все категории
+													option(value="2") Все категории
+													option(value="3") Все категории
+												input(type="submit" class="col-sm-1")
+									.top-info.col-md-3.col-xs-6
+										a(href="tel:380937897898") +38(093)789-78-98
+										a(href="mailto:danya.89@mail.ru") danya.89@mail.ru
+									.sys-links.col-md-4.col-xs-6
+										.link-item.acc
+											a(href="#") Мой аккаунт
+										.link-item.cart
+											a(href="#") Корзина
+											.notification 4
+										.link-item.compare
+											a(href="#") Сравнение
+											.notification 27
+						div.collapse.navbar-collapse#bottom-nav
+							.dropdown
+								button(type="button" class="category-menu dropdown-toggle" id="category-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true") Меню
+								ul.dropdown-menu.hidden-menu(aria-labelledby="category-list")
+									li
+										a(href="#") Категория 1
+									li
+										a(href="#") Категория 2
+									li
+										a(href="#") Категория 3
+									li
+										a(href="#") Категория 4
+									li
+										a(href="#") Категория 5
+									li
+										a(href="#") Категория 6
+									li
+										a(href="#") Категория 7
+									li
+										a(href="#") Категория 8
+									li
+										a(href="#") Категория 9
+									li
+										a(href="#") Категория 10
+									li
+										a(href="#") Категория 11
+									li
+										a(href="#") Категория 12
+									li
+										a(href="#") Категория 13
+									li
+										a(href="#") Категория 14
+									li
+										a(href="#") Категория 15
+									li
+										a(href="#") Категория 16
+									li
+										a(href="#") Категория 17
+									li
+										a(href="#") Категория 18
+							ul.main-menu
+								li
+									a(href="#") Главная
+								li
+									a(href="#") Товары
+								li
+									a(href="#") Услуги
+								li
+									a(href="#") О нас
+								li
+									a(href="#") Клиентам
+								li
+									a(href="#") Контакты
+								li
+									a(href="#") Скоро в продаже
+							a(href="#" class="help-link") Помощь
+		section.breadcrums
+			.wrap
+				.links-container
+					a(href="#") Главная
+					span Домофоны
+		section.main
+			aside.filters
+				.filter.category-filter
+					.title-panel
+						.big-title категории
+					.filter-body
+						ul
+							li.active
+								a(href="#") Аудиомофоны
+								.count 3
+							li
+								a(href="#") Видеомофоны
+								.count 4
+				.filter.price-filter
+					.title-panel
+						.big-title цена
+					.filter-body
+						.range-line
+							#range
+						.range-output
+							div Фильтр
+							.output-inputs
+								input(type="text" id="from" placeholder="100грн")
+								input(type="text" id="to" placeholder="100грн")
+				.filter.producer.carousel.slide#producer-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title Производитель
+						.lists-nav
+							a(href="#producer-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#producer-rotator" role="button" data-slide="next")
+								.right-arr
+					.producer-lists.carousel-inner(role="listbox")
+						div.active.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+						div.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+						div.item.slider-item
+							ul
+								li.active
+									a(href="#") Производитель 1
+									b (+25)
+								li
+									a(href="#") Производитель 2
+									b (+25)
+								li
+									a(href="#") Производитель 3
+									b (+25)
+								li
+									a(href="#") Производитель 4
+									b (+25)
+								li
+									a(href="#") Производитель 5
+									b (+25)
+								li
+									a(href="#") Производитель 6
+									b (+25)
+								li
+									a(href="#") Производитель 7
+									b (+25)
+								li
+									a(href="#") Производитель 8
+									b (+25)
+				.filter.color-filter.carousel.slide#color-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title цвет
+						.lists-nav
+							a(href="#color-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#color-rotator" role="button" data-slide="next")
+								.right-arr
+					.filter-body.carousel-inner(role="listbox")
+						.item.active.color-type
+							ul
+								li
+									input(type="checkbox" id="color1" value="black")
+									label(for="color1").
+										Black <b>(+25)</b>
+								li
+									input(type="checkbox" id="color2" value="blue")
+									label(for="color2").
+										Blue <b>(+25)</b>
+								li
+									input(type="checkbox" id="color3" value="golden")
+									label(for="color3").
+										Golden <b>(+25)</b>
+								li
+									input(type="checkbox" id="color4" value="green")
+									label(for="color4").
+										Green <b>(+25)</b>
+								li
+									input(type="checkbox" id="color5" value="grey")
+									label(for="color5").
+										Grey <b>(+25)</b>
+								li
+									input(type="checkbox" id="color6" value="pink")
+									label(for="color6").
+										Pink <b>(+25)</b>
+								li
+									input(type="checkbox" id="color7" value="red")
+									label(for="color7").
+										Red <b>(+25)</b>
+								li
+									input(type="checkbox" id="color8" value="silver")
+									label(for="color8").
+										Silver <b>(+25)</b>
+						.item.color-type
+							ul
+								li
+									input(type="checkbox" id="color1" value="black")
+									label(for="color1").
+										Black <b>(+25)</b>
+								li
+									input(type="checkbox" id="color2" value="blue")
+									label(for="color2").
+										Blue <b>(+25)</b>
+								li
+									input(type="checkbox" id="color3" value="golden")
+									label(for="color3").
+										Golden <b>(+25)</b>
+								li
+									input(type="checkbox" id="color4" value="green")
+									label(for="color4").
+										Green <b>(+25)</b>
+								li
+									input(type="checkbox" id="color5" value="grey")
+									label(for="color5").
+										Grey <b>(+25)</b>
+								li
+									input(type="checkbox" id="color6" value="pink")
+									label(for="color6").
+										Pink <b>(+25)</b>
+								li
+									input(type="checkbox" id="color7" value="red")
+									label(for="color7").
+										Red <b>(+25)</b>
+								li
+									input(type="checkbox" id="color8" value="silver")
+									label(for="color8").
+										Silver <b>(+25)</b>
+						.item.color-type
+							ul
+								li
+									input(type="checkbox" id="color1" value="black")
+									label(for="color1").
+										Black <b>(+25)</b>
+								li
+									input(type="checkbox" id="color2" value="blue")
+									label(for="color2").
+										Blue <b>(+25)</b>
+								li
+									input(type="checkbox" id="color3" value="golden")
+									label(for="color3").
+										Golden <b>(+25)</b>
+								li
+									input(type="checkbox" id="color4" value="green")
+									label(for="color4").
+										Green <b>(+25)</b>
+								li
+									input(type="checkbox" id="color5" value="grey")
+									label(for="color5").
+										Grey <b>(+25)</b>
+								li
+									input(type="checkbox" id="color6" value="pink")
+									label(for="color6").
+										Pink <b>(+25)</b>
+								li
+									input(type="checkbox" id="color7" value="red")
+									label(for="color7").
+										Red <b>(+25)</b>
+								li
+									input(type="checkbox" id="color8" value="silver")
+									label(for="color8").
+										Silver <b>(+25)</b>
+				.filter.color-filter.carousel.slide#country-rotator(data-ride="carousel")
+					.title-panel
+						.dark-title Страна
+						.lists-nav
+							a(href="#country-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#country-rotator" role="button" data-slide="next")
+								.right-arr
+					.filter-body.carousel-inner(role="listbox")
+						.item.active.country
+							ul
+								li
+									input(type="checkbox" id="country1" value="usa")
+									label(for="country1").
+										США <b>(+25)</b>
+								li
+									input(type="checkbox" id="country2" value="japan")
+									label(for="country2").
+										Япония <b>(+25)</b>
+								li
+									input(type="checkbox" id="country3" value="china")
+									label(for="country3").
+										Китай <b>(+25)</b>
+								li
+									input(type="checkbox" id="country4" value="germany")
+									label(for="country4").
+										Германия <b>(+25)</b>
+								li
+									input(type="checkbox" id="country5" value="ukraine")
+									label(for="country5").
+										Украина <b>(+25)</b>
+								li
+									input(type="checkbox" id="country6" value="korea")
+									label(for="country6").
+										Корея <b>(+25)</b>
+								li
+									input(type="checkbox" id="country7" value="russia")
+									label(for="country7").
+										Россия <b>(+25)</b>
+								li
+									input(type="checkbox" id="country8" value="vietnam")
+									label(for="country8").
+										Вьетнам <b>(+25)</b>
+						.item.country
+							ul
+								li
+									input(type="checkbox" id="country1" value="usa")
+									label(for="country1").
+										США <b>(+25)</b>
+								li
+									input(type="checkbox" id="country2" value="japan")
+									label(for="country2").
+										Япония <b>(+25)</b>
+								li
+									input(type="checkbox" id="country3" value="china")
+									label(for="country3").
+										Китай <b>(+25)</b>
+								li
+									input(type="checkbox" id="country4" value="germany")
+									label(for="country4").
+										Германия <b>(+25)</b>
+								li
+									input(type="checkbox" id="country5" value="ukraine")
+									label(for="country5").
+										Украина <b>(+25)</b>
+								li
+									input(type="checkbox" id="country6" value="korea")
+									label(for="country6").
+										Корея <b>(+25)</b>
+								li
+									input(type="checkbox" id="country7" value="russia")
+									label(for="country7").
+										Россия <b>(+25)</b>
+								li
+									input(type="checkbox" id="country8" value="vietnam")
+									label(for="country8").
+										Вьетнам <b>(+25)</b>
+
+				.sidebar-banner
+					img(src="images/demo/sidebar-ad.png", alt="")
+			.catalog-container
+				.catalog-panel
+					.catalog-name Домофоны
+					.catalog-sort
+						.sort.by
+							div Сортировать по
+							select#sort(name="sort")
+								option(value="1") Цена: низкая
+								option(value="2") Цена: высокая
+								option(value="3") Популярные
+								option(value="4") Новинки
+						.show.by
+							div Показать
+							select#show(name="show")
+								option(value="12") 12
+								option(value="24") 24
+								option(value="32") 32
+								option(value="40") 40
+						.view-type
+							a.active(href="#")
+							a(href="#")
+						
+						
+				.catalog-wrap
+					.catalog-tabs-panel
+						ul.nav.nav-tabs#catalog-tabs(role="tablist")
+							li(role="presentation" class="active")
+								a(href="#audiodomophones" aria-controls="audiodomophones" role="tab" data-toggle="tab") Аудиодомофоны
+							li(role="presentation")
+								a(href="#videodomophones" aria-controls="videodomophones" role="tab" data-toggle="tab") Видеодомофоны
+						.lists-nav
+							a(href="#catalog-type-rotator" role="button" data-slide="prev")
+								.left-arr
+							a(href="#catalog-type-rotator" role="button" data-slide="next")
+								.right-arr
+					.tab-content.catalog-desk
+						div(role="tabpanel" class="tab-pane fade in active" id="audiodomophones")
+							.catalog-type.carousel.slide#catalog-type-rotator(data-ride="carousel")
+								.carousel-inner(role="listbox")
+									.row.item.active
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+									.row.item
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.new-label Новинки
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a.blue(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.new-label Новинки
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a.blue(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.new-label Новинки
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a.blue(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/black-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.new-label Новинки
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a.blue(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+									.row.item
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+										.item.col-md-3.col-sm-4
+											.item-wrap
+												.item-photo
+													img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+													.sale-label -70%
+													.delivery-label
+														img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+												.item-description
+													.item-name
+														a(href="#").
+															Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+													.item-status
+														div В наличии
+														div Оптом и в розницу
+													.buy-field
+														.buy-btn
+															a(href="#") Купить
+														.buy-price 350грн
+													.call-me
+														a(href="#") Перезвоните мне
+							.pagination-panel
+								.nav-links
+									a(href="#").left
+									a(href="#").active 1
+									a(href="#") 2
+									a(href="#") 3
+									a(href="#") 4
+									a(href="#").right
+
+						div(role="tabpanel" class="tab-pane fade" id="videodomophones")
+							.row
+								.item.col-md-3.col-sm-4
+									.item-wrap
+										.item-photo
+											img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+											.sale-label -70%
+											.delivery-label
+												img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.item-description
+											.item-name
+												a(href="#").
+													Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+											.item-status
+												div В наличии
+												div Оптом и в розницу
+											.buy-field
+												.buy-btn
+													a(href="#") Купить
+												.buy-price 350грн
+											.call-me
+												a(href="#") Перезвоните мне
+								.item.col-md-3.col-sm-4
+									.item-wrap
+										.item-photo
+											img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+											.sale-label -70%
+											.delivery-label
+												img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.item-description
+											.item-name
+												a(href="#").
+													Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+											.item-status
+												div В наличии
+												div Оптом и в розницу
+											.buy-field
+												.buy-btn
+													a(href="#") Купить
+												.buy-price 350грн
+											.call-me
+												a(href="#") Перезвоните мне
+								.item.col-md-3.col-sm-4
+									.item-wrap
+										.item-photo
+											img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+											.sale-label -70%
+											.delivery-label
+												img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.item-description
+											.item-name
+												a(href="#").
+													Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+											.item-status
+												div В наличии
+												div Оптом и в розницу
+											.buy-field
+												.buy-btn
+													a(href="#") Купить
+												.buy-price 350грн
+											.call-me
+												a(href="#") Перезвоните мне
+								.item.col-md-3.col-sm-4
+									.item-wrap
+										.item-photo
+											img(src="images/demo/white-cam.png", alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп")
+											.sale-label -70%
+											.delivery-label
+												img(src="images/ui/free-delivery.png", alt="Бесплатная доставка")
+										.item-description
+											.item-name
+												a(href="#").
+													Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп
+											.item-status
+												div В наличии
+												div Оптом и в розницу
+											.buy-field
+												.buy-btn
+													a(href="#") Купить
+												.buy-price 350грн
+											.call-me
+												a(href="#") Перезвоните мне
+							.pagination-panel
+								.nav-links
+									a(href="#").left
+									a(href="#").active 1
+									a(href="#") 2
+									a(href="#") 3
+									a(href="#") 4
+									a(href="#").right
+
+
+
+
+
+
+
+		.subscribe
+			.subscribe-wrap
+				.subscribe-title Рассылка
+				.subscribe-form
+					form(action="#")
+						input(type="text" placeholder="Введите адрес" required)
+						input(type="submit" value="Отправить")
+
+		footer
+			.wrap.row
+				.footer-column.col-sm-3
+					.column-title Свяжитесь с нами
+					.adress Офис:
+						p.
+							795 Folsom Ave, Suite 600<br> San Francisco, CA 94107
+					.contacts
+						p
+							b Телефон:
+							span (91) 8547 632521
+						p
+							b Fax:
+							span (91) 11 4752 1433
+						p
+							b Email:
+							span info@pan
+					.copyr ©Copyright 2016 SVN | All Rights Reserved
+				.footer-column.col-sm-3
+					.column-title Мой аккаунт
+					ul
+						li
+							a(href="#") Авторизоваться
+						li
+							a(href="#") Моя тележка
+						li
+							a(href="#") Добавить в корзину
+						li
+							a(href="#") Проверять, выписываться
+				.footer-column.col-sm-3
+					.column-title Информация
+					ul
+						li
+							a(href="#") Специальные предложения
+						li
+							a(href="#") Новые продукты
+						li
+							a(href="#") Бестселлеры
+						li
+							a(href="#") Наши магазины
+				.footer-column.col-sm-3
+					.column-title Заказы
+					ul
+						li
+							a(href="#") Варианты оплаты
+						li
+							a(href="#") Доставка и доставки
+						li
+							a(href="#") Возвращает
+						li
+							a(href="#") Перевозка
+					.payments
+						img(src="images/ui/payments.png", alt="")
+					.social
+						div Оставайся на связи
+						.icons-wrap
+							a(href="#")
+							a(href="#")
+							a(href="#")
+							a(href="#")
+		.filters-toggle
+			span Фильтры
+
+		script(src="js/jquery-1.9.1.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+		script(src="js/nouislider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src="js/jquery.fancybox.js")		
+		script(src="js/main.js")

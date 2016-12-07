@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/nouislider.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>SVN Каталог2</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <div class="navbar-header"><a href="/" class="navbar-brand"><img src="images/ui/logo.png" alt="SVN"/></a>
+              <button type="button" data-toggle="collapse" data-target="#bottom-nav" class="navbar-toggle collapsed"><span class="sr-only">Навигация</span><span class="icon-bar"><i class="fa fa-bars fa-2x"></i></span></button>
+            </div>
+            <div id="main-nav">
+              <div class="container top-line">
+                <div class="row">
+                  <div class="search-field col-md-5 col-xs-12">
+                    <form action="#">
+                      <div class="row">
+                        <input type="text" placeholder="Поиск..." class="col-sm-7"/>
+                        <select id="search-filter" name="search-filter" class="col-sm-4">
+                          <option value="1">Все категории</option>
+                          <option value="2">Все категории</option>
+                          <option value="3">Все категории</option>
+                        </select>
+                        <input type="submit" class="col-sm-1"/>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="top-info col-md-3 col-xs-6"><a href="tel:380937897898">+38(093)789-78-98</a><a href="mailto:danya.89@mail.ru">danya.89@mail.ru</a></div>
+                  <div class="sys-links col-md-4 col-xs-6">
+                    <div class="link-item acc"><a href="#">Мой аккаунт</a></div>
+                    <div class="link-item cart"><a href="#">Корзина</a>
+                      <div class="notification">4</div>
+                    </div>
+                    <div class="link-item compare"><a href="#">Сравнение</a>
+                      <div class="notification">27</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bottom-nav" class="collapse navbar-collapse">
+              <div class="dropdown">
+                <button type="button" id="category-list" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="category-menu dropdown-toggle">Меню</button>
+                <ul aria-labelledby="category-list" class="dropdown-menu hidden-menu">
+                  <li><a href="#">Категория 1</a></li>
+                  <li><a href="#">Категория 2</a></li>
+                  <li><a href="#">Категория 3</a></li>
+                  <li><a href="#">Категория 4</a></li>
+                  <li><a href="#">Категория 5</a></li>
+                  <li><a href="#">Категория 6</a></li>
+                  <li><a href="#">Категория 7</a></li>
+                  <li><a href="#">Категория 8</a></li>
+                  <li><a href="#">Категория 9</a></li>
+                  <li><a href="#">Категория 10</a></li>
+                  <li><a href="#">Категория 11</a></li>
+                  <li><a href="#">Категория 12</a></li>
+                  <li><a href="#">Категория 13</a></li>
+                  <li><a href="#">Категория 14</a></li>
+                  <li><a href="#">Категория 15</a></li>
+                  <li><a href="#">Категория 16</a></li>
+                  <li><a href="#">Категория 17</a></li>
+                  <li><a href="#">Категория 18</a></li>
+                </ul>
+              </div>
+              <ul class="main-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Клиентам</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Скоро в продаже</a></li>
+              </ul><a href="#" class="help-link">Помощь</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="breadcrums">
+      <div class="wrap">
+        <div class="links-container"><a href="#">Главная</a><span>Домофоны</span></div>
+      </div>
+    </section>
+    <section class="main">
+      <aside class="filters">
+        <div class="filter category-filter">
+          <div class="title-panel">
+            <div class="big-title">категории</div>
+          </div>
+          <div class="filter-body">
+            <ul>
+              <li class="active"><a href="#">Аудиомофоны</a>
+                <div class="count">3</div>
+              </li>
+              <li><a href="#">Видеомофоны</a>
+                <div class="count">4</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter price-filter">
+          <div class="title-panel">
+            <div class="big-title">цена</div>
+          </div>
+          <div class="filter-body">
+            <div class="range-line">
+              <div id="range"></div>
+            </div>
+            <div class="range-output">
+              <div>Фильтр</div>
+              <div class="output-inputs">
+                <input type="text" id="from" placeholder="100грн"/>
+                <input type="text" id="to" placeholder="100грн"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filter producer">
+          <div class="title-panel">
+            <div class="dark-title">Производитель</div>
+          </div>
+          <ul>
+            <li class="active"><a href="#">Производитель 1</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 2</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 3</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 4</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 5</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 6</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 7</a><b>(+25)</b></li>
+            <li><a href="#">Производитель 8</a><b>(+25)</b></li>
+          </ul>
+        </div>
+        <div class="filter color-filter">
+          <div class="title-panel">
+            <div class="dark-title">цвет</div>
+          </div>
+          <div class="filter-body">
+            <ul>
+              <li>
+                <input type="checkbox" id="color1" value="black"/>
+                <label for="color1">Black <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color2" value="blue"/>
+                <label for="color2">Blue <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color3" value="golden"/>
+                <label for="color3">Golden <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color4" value="green"/>
+                <label for="color4">Green <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color5" value="grey"/>
+                <label for="color5">Grey <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color6" value="pink"/>
+                <label for="color6">Pink <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color7" value="red"/>
+                <label for="color7">Red <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="color8" value="silver"/>
+                <label for="color8">Silver <b>(+25)</b></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter color-filter">
+          <div class="title-panel">
+            <div class="dark-title">Страна</div>
+          </div>
+          <div class="filter-body">
+            <ul>
+              <li>
+                <input type="checkbox" id="country1" value="usa"/>
+                <label for="country1">США <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country2" value="japan"/>
+                <label for="country2">Япония <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country3" value="china"/>
+                <label for="country3">Китай <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country4" value="germany"/>
+                <label for="country4">Германия <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country5" value="ukraine"/>
+                <label for="country5">Украина <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country6" value="korea"/>
+                <label for="country6">Корея <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country7" value="russia"/>
+                <label for="country7">Россия <b>(+25)</b></label>
+              </li>
+              <li>
+                <input type="checkbox" id="country8" value="vietnam"/>
+                <label for="country8">
+                  Вьетнам <b>(+25)</b>
+                  
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar-banner"><img src="images/demo/sidebar-ad.png" alt=""/></div>
+      </aside>
+      <div class="catalog-container">
+        <div class="catalog-panel">
+          <div class="catalog-name">Домофоны</div>
+          <div class="catalog-sort">
+            <div class="sort by">
+              <div>Сортировать по</div>
+              <select id="sort" name="sort">
+                <option value="1">Цена: низкая</option>
+                <option value="2">Цена: высокая</option>
+                <option value="3">Популярные</option>
+                <option value="4">Новинки</option>
+              </select>
+            </div>
+            <div class="show by">
+              <div>Показать</div>
+              <select id="show" name="show">
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="32">32</option>
+                <option value="40">40</option>
+              </select>
+            </div>
+            <div class="view-type"><a href="#" class="active"></a><a href="#"></a></div>
+          </div>
+        </div>
+        <div class="catalog-wrap">
+          <div class="catalog-tabs-panel">
+            <ul role="tablist" class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#audiodomophones" aria-controls="audiodomophones" role="tab" data-toggle="tab">Аудиодомофоны</a></li>
+              <li role="presentation"><a href="#videodomophones" aria-controls="videodomophones" role="tab" data-toggle="tab">Видеодомофоны</a></li>
+            </ul>
+          </div>
+          <div class="tab-content catalog-desk">
+            <div role="tabpanel" id="audiodomophones" class="tab-pane fade in active">
+              <div class="row">
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-panel">
+                <div class="nav-links"><a href="#" class="left"></a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#" class="right"></a></div>
+              </div>
+            </div>
+            <div role="tabpanel" id="videodomophones" class="tab-pane fade">
+              <div class="row">
+                <div class="item reverse col-sm-12">
+                  <div class="item-wrap">
+                    <div class="item-photo"><img src="images/demo/white-cam.png" alt="Уличная Turbo HD камера  Hikvision DS-2CE16C2T-IT5,  1.3 Мп"/>
+                      <div class="sale-label">-70%</div>
+                      <div class="delivery-label"><img src="images/ui/free-delivery.png" alt="Бесплатная доставка"/></div>
+                    </div>
+                    <div class="item-description">
+                      <div class="item-name"><a href="#">Уличная Turbo HD камера Hikvision DS-2CE16C2T-IT5, 1.3 Мп</a></div>
+                      <div class="product-line-top">
+                        <div class="poduct-price">350грн</div>
+                        <div class="poduct-response"><a href="#">5 отзывов</a></div>
+                      </div>
+                      <div class="item-status">
+                        <div>В наличии</div>
+                        <div>Оптом и в розницу</div>
+                      </div>
+                      <div class="short-ds">
+                        <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready.Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and</p>
+                      </div>
+                      <div class="buy-field">
+                        <div class="compare-btn"><a href="#"><img src="images/ui/compare-icon.png" alt=""/></a></div>
+                        <div class="buy-btn"><a href="#">Купить</a></div>
+                        <div class="call-me"><a href="#">Перезвоните мне</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination-panel">
+                <div class="nav-links"><a href="#" class="left"></a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#" class="right"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="subscribe">
+      <div class="subscribe-wrap">
+        <div class="subscribe-title">Рассылка</div>
+        <div class="subscribe-form">
+          <form action="#">
+            <input type="text" placeholder="Введите адрес" required="required"/>
+            <input type="submit" value="Отправить"/>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="wrap row">
+        <div class="footer-column col-sm-3">
+          <div class="column-title">Свяжитесь с нами</div>
+          <div class="adress">Офис:
+            <p>795 Folsom Ave, Suite 600<br> San Francisco, CA 94107</p>
+          </div>
+          <div class="contacts">
+            <p><b>Телефон:</b><span>(91) 8547 632521</span></p>
+            <p><b>Fax:</b><span>(91) 11 4752 1433</span></p>
+            <p><b>Email:</b><span>info@pan</span></p>
+          </div>
+          <div class="copyr">©Copyright 2016 SVN | All Rights Reserved</div>
+        </div>
+        <div class="footer-column col-sm-3">
+          <div class="column-title">Мой аккаунт</div>
+          <ul>
+            <li><a href="#">Авторизоваться</a></li>
+            <li><a href="#">Моя тележка</a></li>
+            <li><a href="#">Добавить в корзину</a></li>
+            <li><a href="#">Проверять, выписываться</a></li>
+          </ul>
+        </div>
+        <div class="footer-column col-sm-3">
+          <div class="column-title">Информация</div>
+          <ul>
+            <li><a href="#">Специальные предложения</a></li>
+            <li><a href="#">Новые продукты</a></li>
+            <li><a href="#">Бестселлеры</a></li>
+            <li><a href="#">Наши магазины</a></li>
+          </ul>
+        </div>
+        <div class="footer-column col-sm-3">
+          <div class="column-title">Заказы</div>
+          <ul>
+            <li><a href="#">Варианты оплаты</a></li>
+            <li><a href="#">Доставка и доставки</a></li>
+            <li><a href="#">Возвращает</a></li>
+            <li><a href="#">Перевозка</a></li>
+          </ul>
+          <div class="payments"><img src="images/ui/payments.png" alt=""/></div>
+          <div class="social">
+            <div>Оставайся на связи</div>
+            <div class="icons-wrap"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="filters-toggle"><span>Фильтры</span></div>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js">		</script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
